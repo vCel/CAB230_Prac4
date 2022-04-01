@@ -12,6 +12,45 @@ body {
   font-size: 16px;
 }
 
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #2e8b57;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 2s ease all;
+}
+
+nav ul li a:hover {
+  background: #444;
+}
+
 /* Icon */
 #icon {
   display: inline-block;
@@ -46,4 +85,79 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   color: #777;
+}
+
+.hero__title {
+  font-size: 100px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+.hero__subtitle {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.hero {
+  min-height: 800px;
+  text-align: center;
+  background: url("../img/dining.jpg");
+  background-size: cover;
+}
+
+.hero__content {
+  color: #fff;
+  padding-top: 25px;
+}
+
+.hero__content a {
+  display: inline-block;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  transition: transition 1s;
+}
+
+.hero__content a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.features__box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.features__box {
+  text-align: center;
+  flex: 1;
+  margin-left: 5px;
+}
+
+.features__box img {
+  margin-bottom: 12px;
+  width: 80px;
+}
+
+.features__box h5 {
+  font-size: 20px;
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .features__box-wrapper {
+    flex-wrap: wrap;
+  }
+  .features__box {
+    flex: 1 100%;
+  }
 }
